@@ -38,7 +38,7 @@ angular
       .state('transportation', {
         url: '/transportation',
         templateUrl: 'views/transportation.html',
-        data: {pageTitle: 'transportation' + YSL_TITLE}
+        data: {pageTitle: 'Transportation' + YSL_TITLE}
       })
       .state('accomodation', {
         url: '/accomodation',

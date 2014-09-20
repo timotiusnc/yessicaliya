@@ -30,15 +30,15 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron jumbotron-header">
-        <div class="row">
+        <div class="row jumbotron-top">
           <div class="col-sm-3">
             <img class="people-yessica img-responsive" src="images/yessica-sm.png"/>
           </div>
 
           <div class="col-sm-6">
             <h2 class="jumbotron-title">The Wedding</h2>
-            <span class="jumbotron-date">Kediri - </span>
-            <span class="jumbotron-date">18 Oktober 2014</span>
+            <div class="jumbotron-date">Kediri</div>
+            <div class="jumbotron-date">18 Oktober 2014</div>
             
             <h2 class="jumbotron-people">Yessica & Liya</h2>
           </div>
@@ -48,7 +48,12 @@
           </div>
         </div>
         
-        <p class="jumbotron-proverb">Marriage is the golden ring in a chain whose beginning is a Glance and whose ending is Eternity ~ Kahlil Gibran</p>
+        <div class="row jumbotron-bottom">
+          <blockquote>
+            <p>Marriage is the golden ring in a chain whose beginning is a Glance and whose ending is Eternity</p>
+            <footer>Kahlil Gibran</footer>
+          </blockquote>
+        </div>
       </div>
 
       <div class="container" ui-view>
