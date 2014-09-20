@@ -1,40 +1,59 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" ng-app="yessicaliyaApp">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title ng-bind="state.data.pageTitle"></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Marck+Script" rel="stylesheet" type="text/css">
   </head>
-  <body ng-app="yessicaliyaApp">
+  <body ng-class="bgColor">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#">About</a></li>
-          <li><a ng-href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">yessicaliya</h3>
+      <ysl-theme-changer></ysl-theme-changer>
+
+      <!-- Static navbar -->
+      <ysl-menu></ysl-menu>
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron jumbotron-header">
+        <div class="row">
+          <div class="col-sm-3">
+            <img class="people-yessica img-responsive" src="images/yessica-sm.png"/>
+          </div>
+
+          <div class="col-sm-6">
+            <h2 class="jumbotron-title">The Wedding</h2>
+            <span class="jumbotron-date">Kediri - </span>
+            <span class="jumbotron-date">18 Oktober 2014</span>
+            
+            <h2 class="jumbotron-people">Yessica & Liya</h2>
+          </div>
+
+          <div class="col-sm-3">
+            <img class="people-liya img-responsive" src="images/liya-sm.png"/>
+          </div>
+        </div>
+        
+        <p class="jumbotron-proverb">Marriage is the golden ring in a chain whose beginning is a Glance and whose ending is Eternity ~ Kahlil Gibran</p>
       </div>
 
-      <div ng-include="'views/main.html'" ng-controller="MainCtrl"></div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="container" ui-view>
       </div>
+
     </div>
 
 
@@ -74,12 +93,19 @@
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/popover.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/jquery.lazyload/jquery.lazyload.js"></script>
+    <script src="bower_components/jquery.lazyload/jquery.scrollstop.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/home.js"></script>
+
+        <script src="scripts/directives/ysl-menu.js"></script>
+        <script src="scripts/directives/ysl-ornament.js"></script>
+        <script src="scripts/directives/ysl-theme-changer.js"></script>
         <!-- endbuild -->
 </body>
 </html>

@@ -1,0 +1,20 @@
+<div id="theme-changer" ng-class="{active: isActive}">
+  <span id="demo-setting" ng-click="toggleThemeChanger()">
+    <i class="fa fa-cog"></i>
+  </span>
+
+  <form>
+    <legend>Background Chooser</legend>
+    <section>
+      <label>
+        <input type="radio" ng-model="bgColor" value="tosca">
+        Tosca
+      </label>
+
+      <label>
+        <input type="radio" ng-model="bgColor" value="pink">
+        Pink
+      </label>
+    </section>
+  </form>
+</div>

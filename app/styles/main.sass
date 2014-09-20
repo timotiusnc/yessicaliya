@@ -1,0 +1,42 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/"
+// bower:scss
+@import bootstrap-sass-official/assets/stylesheets/_bootstrap.scss
+// endbower
+
+//Variables
+$body-font-size: 14px
+
+//Imports
+@import "calc"
+@import "header"
+@import "elmt/ysl-theme-changer"
+
+.browsehappy
+  margin: 0.2em 0
+  background: #ccc
+  color: #000
+  padding: 0.2em 0
+
+/* Space out content a bit */
+body
+  padding-top: 20px
+  padding-bottom: 20px
+  font-family: 'Chelsea Market', "Helvetica Neue", Helvetica, Arial, sans-serif
+  &.pink
+    background: #DB84AD
+  &.tosca
+    background: turquoise
+
+.navbar
+  margin-bottom: 20px
+
+.jumbotron-header
+  text-align: center
+  font-family: 'Chelsea Market'
+  .jumbotron-title
+    font-size: emCalc(35px)
+  .jumbotron-date
+    font-size: emCalc(27px)
+
+.jumbotron-proverb
+  font-family: 'Marck Script'

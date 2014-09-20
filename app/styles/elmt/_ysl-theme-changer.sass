@@ -1,0 +1,42 @@
+#theme-changer
+  position: absolute
+  top: 100px
+  right: 0
+  width: 160px
+  z-index: 11
+  background: #F1DA91
+  &.active
+    right: 0!important
+    padding: 5px 10px 10px
+    > span
+      left: -30px
+  > span
+    position: absolute
+    right: 0
+    top: 0
+    display: block
+    height: 30px
+    width: 30px
+    cursor: pointer
+    background: #F1DA91
+    padding: 6px 9px
+    border-radius: 5px 0 0 5px
+  form
+    display: none
+    legend
+      margin: 0
+    label
+      display: block
+      padding-left: 15px
+      text-indent: -15px
+      input
+        width: 13px
+        height: 13px
+        padding: 0
+        margin: 0
+        vertical-align: middle
+        postion: relative
+        top: -1px
+        *overflow: hidden
+  &.active form
+    display: block

@@ -1,1 +1,0 @@
-"use strict";angular.module("yessicaliyaApp",["ngAnimate"]),angular.module("yessicaliyaApp").controller("MainCtrl",["$scope",function(a){a.awesomeThings=["HTML5 Boilerplate","AngularJS","Karma"]}]);
