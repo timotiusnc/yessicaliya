@@ -11,6 +11,9 @@ $body-font-size: 14px
 @import "header"
 @import "elmt/ysl-theme-changer"
 
+//Screens
+@import "screen/invitation"
+
 .browsehappy
   margin: 0.2em 0
   background: #ccc
@@ -19,8 +22,8 @@ $body-font-size: 14px
 
 /* Space out content a bit */
 body
-  padding-top: 20px
-  padding-bottom: 20px
+  padding-top: 10px
+  padding-bottom: 10px
   font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif
   &.pink
     background: #DB84AD
@@ -28,10 +31,12 @@ body
     background: turquoise
 
 .navbar
-  margin-bottom: 20px
+  margin-bottom: 10px
 
 .jumbotron-header
   text-align: center
+  padding: 20px
+  margin-bottom: 10px
   .jumbotron-top
     margin-bottom: 0
     .jumbotron-title
@@ -43,6 +48,15 @@ body
   .jumbotron-bottom
     blockquote
       font-family: 'Josefin Sans'
+      border-left: none
       margin-bottom: 0
+      padding: 0
       p
-        margin: 12px 0 0 0
+        margin: 5px 0 0 0
+        font-size: emCalc(15px)
+
+.main-container
+  background: #eee
+  padding: 15px
+  border-radius: 6px
+  font-family: 'Roboto'
