@@ -56,8 +56,8 @@ angular
         data: {pageTitle: 'Gallery' + YSL_TITLE}
       });
   })
-  .run(function($rootScope, $state) {
-    $rootScope.$on('$stateChangeStart', function(e, toState, toParams, fromState, fromParams) {
+  .run(function($rootScope) {
+    $rootScope.$on('$stateChangeStart', function(e, toState) {
       $rootScope.state = toState;
     });
   });

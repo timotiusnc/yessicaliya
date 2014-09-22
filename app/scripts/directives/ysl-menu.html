@@ -11,12 +11,12 @@
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li ng-class="state.name == 'invitation' ? 'active' : ''"><a ui-sref="invitation">Invitation</a></li>
-        <li ng-class="state.name == 'story' ? 'active' : ''"><a ui-sref="story">Our Story</a></li>
-        <li ng-class="state.name == 'transportation' ? 'active' : ''"><a ui-sref="transportation">Transpotation</a></li>
-        <li ng-class="state.name == 'accomodation' ? 'active' : ''"><a ui-sref="accomodation">Accomodation</a></li>
-        <li ng-class="state.name == 'location' ? 'active' : ''"><a ui-sref="location">Location</a></li>
-        <li ng-class="state.name == 'gallery' ? 'active' : ''"><a ui-sref="gallery">Gallery</a></li>
+        <li ui-sref-active="active"><a ui-sref="invitation">Invitation</a></li>
+        <li ui-sref-active="active"><a ui-sref="story">Our Story</a></li>
+        <li ui-sref-active="active"><a ui-sref="transportation">Transpotation</a></li>
+        <li ui-sref-active="active"><a ui-sref="accomodation">Accomodation</a></li>
+        <li ui-sref-active="active"><a ui-sref="location">Location</a></li>
+        <li ui-sref-active="active"><a ui-sref="gallery">Gallery</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container-fluid -->
