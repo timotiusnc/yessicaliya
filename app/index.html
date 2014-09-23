@@ -38,7 +38,7 @@
           <div class="col-sm-6">
             <h2 class="jumbotron-title">The Wedding</h2>
             <h2 class="jumbotron-people">Yessica & Liya</h2>
-            <div class="jumbotron-date">Kediri</div>
+            <div class="jumbotron-city">Kediri</div>
             <div class="jumbotron-date">18 October 2014</div>
           </div>
 
@@ -54,9 +54,8 @@
           </blockquote>
         </div>
       </div>
-
       
-      <div class="main-container" ui-view autoscroll>
+      <div class="main-container" ui-view autoscroll="state.name !== 'home'">
       </div>
       
     </div>
@@ -101,6 +100,7 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="bower_components/jquery.lazyload/jquery.lazyload.js"></script>
     <script src="bower_components/jquery.lazyload/jquery.scrollstop.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -12,7 +12,7 @@ angular.module('yessicaliyaApp')
       templateUrl: 'scripts/directives/ysl-menu.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
-        $('.nav a:not(.dropdown-toggle)').on('click', function() {
+        $('.navbar a:not(.dropdown-toggle)').on('click', function() {
           var width = $(window).width();
           if (width <= 768) {
             $('.navbar-toggle').click();

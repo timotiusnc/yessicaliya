@@ -11,7 +11,8 @@
 angular
   .module('yessicaliyaApp', [
     'ngAnimate',
-    'ui.router'
+    'ui.router',
+    'ui.bootstrap'
   ])
   .constant('$', window.$)
   .constant('YSL_TITLE', ' | Yessica & Liya Wedding')

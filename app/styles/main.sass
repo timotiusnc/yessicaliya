@@ -13,6 +13,10 @@ $body-font-size: 14px
 
 //Screens
 @import "screen/invitation"
+@import "screen/location"
+@import "screen/accomodation"
+@import "screen/transportation"
+@import "screen/story"
 
 .browsehappy
   margin: 0.2em 0
@@ -30,6 +34,12 @@ body
   &.tosca
     background: turquoise
 
+.nav a, .pagination, .carousel, .panel-title a, ul a, a
+  cursor: pointer
+
+hr
+  border-color: #ddd
+
 .navbar
   margin-bottom: 10px
 
@@ -41,8 +51,12 @@ body
     margin-bottom: 0
     .jumbotron-title
       font-size: emCalc(35px)
-    .jumbotron-date
+    .jumbotron-city, .jumbotron-date
       font-size: emCalc(23px)
+    .jumbotron-date
+      margin-bottom: 15px
+      @media (min-width: $screen-sm-min)
+        margin-bottom: 0
     .jumbotron-people
       margin-top: 5px
   .jumbotron-bottom
@@ -57,6 +71,11 @@ body
 
 .main-container
   background: #eee
-  padding: 15px
+  padding: 50px 30px 30px 30px
+  @media (min-width: $screen-sm-min)
+    padding: 15px
   border-radius: 6px
   font-family: 'Roboto'
+
+.tab-content
+  padding: 15px
