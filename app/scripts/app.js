@@ -10,12 +10,14 @@
  */
 angular
   .module('yessicaliyaApp', [
-    'ngAnimate',
+    //'ngAnimate',
     'ui.router',
     'ui.bootstrap'
   ])
   .constant('$', window.$)
   .constant('YSL_TITLE', ' | Yessica & Liya Wedding')
+  .constant('MAX_SLIDES', 7)
+  .constant('MAX_GALLERIES', 30)
   .config(function($stateProvider, $urlRouterProvider, YSL_TITLE) {
     $urlRouterProvider.otherwise('/');
 
@@ -53,6 +55,7 @@ angular
       })
       .state('gallery', {
         url: '/gallery',
+        controller: 'GalleryCtrl',
         templateUrl: 'views/gallery.html',
         data: {pageTitle: 'Gallery' + YSL_TITLE}
       });
