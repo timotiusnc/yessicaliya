@@ -15,4 +15,11 @@ angular.module('yessicaliyaApp')
         url: 'images/gallery/gallery_' + i + '.jpg'
       });
     }
+
+    $scope.thumbnails =  [];
+    for(var i=1; i<=MAX_GALLERIES; ++i) {
+      $scope.thumbnails.push({
+        url: 'images/gallery/gallery_sm_' + i + '.jpg'
+      });
+    }
   });

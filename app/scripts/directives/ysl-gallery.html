@@ -1,5 +1,11 @@
 <div id="ysl-carousel" class="owl-carousel owl-theme">
   <div class="item" ng-repeat="image in images">
-    <img class="lazyOwl" data-src="{{image.url}}" data-id="{{$index}}"/>
+    <img class="lazyOwl img-responsive" data-src="{{image.url}}"/>
+  </div>
+</div>
+
+<div id="ysl-carousel-thumbnail" class="owl-carousel owl-theme">
+  <div class="item" ng-repeat="image in thumbnails">
+    <img class="lazyOwl img-responsive" data-src="{{image.url}}" ng-click="owlGoTo($index)"/>
   </div>
 </div>

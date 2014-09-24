@@ -12,19 +12,35 @@ angular.module('yessicaliyaApp')
       templateUrl: 'scripts/directives/ysl-gallery.html',
       restrict: 'E',
       scope: {
-        images: '='
+        images: '=',
+        thumbnails: '='
       },
       link: function postLink(scope, element, attrs) {
         var owl = $("#ysl-carousel");
+        var owlThumb = $("#ysl-carousel-thumbnail");
 
         $timeout(function() {
           owl.owlCarousel({
             navigation: true, // Show next and prev buttons
-            slideSpeed: 300,
-            paginationSpeed: 400,
+            slideSpeed: 500,
             singleItem: true,
             lazyLoad : true,
-            afterInit: afterOWLinit // do some work after OWL init
+            autoPlay: 2000,
+            pagination: false
+            //afterInit: afterOWLinit // do some work after OWL init
+          });
+
+          owlThumb.owlCarousel({
+            slideSpeed: 500,
+            lazyLoad : true,
+            items: 10,
+            itemsDesktop : [1199,8],
+            itemsDesktopSmall : [980,6],
+            itemsTablet: [768,4],
+            itemsTabletSmall: false,
+            itemsMobile : [479,3],
+            autoPlay: 2000,
+            pagination: false
           });
 
           owl.find('a').click(function(e) {
@@ -32,6 +48,10 @@ angular.module('yessicaliyaApp')
             return false;
           });
         });
+
+        scope.owlGoTo = function(idx) {
+          owl.trigger('owl.goTo', idx);
+        };
         
         function getThumbnail(idx) {
           return 'images/gallery/gallery_sm_' + (++idx) + '.jpg';
