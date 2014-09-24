@@ -31,6 +31,15 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=1464778593784872&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <!-- Add your site or application content here -->
     <div class="container">
       <ysl-theme-changer></ysl-theme-changer>
@@ -70,6 +79,14 @@
       
       <footer>
         <div class="container">
+          <div
+            class="fb-like"
+            data-href="http://yessicaliya.com/"
+            data-layout="button_count"
+            data-action="like"
+            data-show-faces="true"
+            data-share="true">
+          </div>
           <p>
             Yessica & Liya<br>
             Crafted with <i class="fa fa-heart"></i> by <a href="https://twitter.com/TimotiusNC" target="_blank">@TimotiusNC</a>

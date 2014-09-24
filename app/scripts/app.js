@@ -14,6 +14,7 @@ angular
     'ui.router',
     'ui.bootstrap',
     'angulartics',
+    'angulartics.google.analytics'
   ])
   .constant('$', window.$)
   .constant('YSL_TITLE', ' | Yessica & Liya Wedding')
