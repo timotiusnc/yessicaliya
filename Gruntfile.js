@@ -367,6 +367,16 @@ module.exports = function (grunt) {
           cwd: '.',
           src: 'CNAME',
           dest: '<%= yeoman.dist %>'
+        }, {
+          expand: false,
+          cwd: '.',
+          src: 'bower_components/owl-carousel/owl-carousel/AjaxLoader.gif',
+          dest: '<%= yeoman.dist %>/styles/AjaxLoader.gif'
+        }, {
+          expand: false,
+          cwd: '.',
+          src: 'bower_components/owl-carousel/owl-carousel/grabbing.png',
+          dest: '<%= yeoman.dist %>/styles/grabbing.png'
         }]
       },
       styles: {
