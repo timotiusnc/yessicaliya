@@ -25,7 +25,7 @@ angular.module('yessicaliyaApp')
             slideSpeed: 500,
             singleItem: true,
             lazyLoad : true,
-            autoPlay: 2000,
+            autoPlay: 5000,
             pagination: false
             //afterInit: afterOWLinit // do some work after OWL init
           });
@@ -39,7 +39,7 @@ angular.module('yessicaliyaApp')
             itemsTablet: [768,4],
             itemsTabletSmall: false,
             itemsMobile : [479,3],
-            autoPlay: 2000,
+            autoPlay: 5000,
             pagination: false
           });
 
