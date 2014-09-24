@@ -378,10 +378,25 @@ module.exports = function (grunt) {
           src: 'bower_components/owl-carousel/owl-carousel/grabbing.png',
           dest: '<%= yeoman.dist %>/styles/grabbing.png'
         }, {
-          expand: true,
+          expand: false,
           cwd: '.',
-          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*',
-          dest: '<%= yeoman.dist %>/styles'
+          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot',
+          dest: '<%= yeoman.dist %>/fonts/glyphicons-halflings-regular.eot'
+        },  {
+          expand: false,
+          cwd: '.',
+          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg',
+          dest: '<%= yeoman.dist %>/fonts/glyphicons-halflings-regular.svg'
+        },  {
+          expand: false,
+          cwd: '.',
+          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf',
+          dest: '<%= yeoman.dist %>/fonts/glyphicons-halflings-regular.ttf'
+        },  {
+          expand: false,
+          cwd: '.',
+          src: 'bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff',
+          dest: '<%= yeoman.dist %>/fonts/glyphicons-halflings-regular.woff'
         }]
       },
       styles: {
